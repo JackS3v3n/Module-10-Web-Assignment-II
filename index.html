@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module 10 Web Assignment II</title>
+<style>
+  /* Styles for demonstration */
+  .comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .comment p {
+    margin: 0;
+  }
+
+  ul li {
+    color: blue;
+  }
+  
+  div > h2 {
+    color: red;
+  }
+  
+  h1 + p {
+    color: green;
+  }
+  
+  h2 ~ p {
+    color: purple;
+  }
+</style>
+</head>
+<body>
+  <h1>Module 10 Web Assignment II</h1>
+  <div class="comment"><!-- Descendant selector -->
+    <p>This selector selects the li elements that are descendants of ul elements.</p>
+  </div>
+  <ul>
+    <li>Game 1</li>
+    <li>Game 2</li>
+  </ul>
+  <div class="comment"><!-- Child selector -->
+    <p>This selector selects the h2 elements that are children of the div element.</p>
+  </div>
+  <div>
+    <h2>Heading 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore adipisci placeat molestias consequuntur quidem. Est, beatae optio consequatur deserunt perspiciatis veritatis neque reiciendis animi, rem sapiente aliquam blanditiis nam eaque!</p>
+    <h2>Heading 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A provident similique, obcaecati, et officiis distinctio voluptas asperiores nemo ducimus, esse cumque cupiditate dolor perspiciatis harum sit. Soluta, quisquam facere! Laudantium.</p>
+  
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reprehenderit sapiente eius praesentium in nemo id alias officia qui amet rerum, nostrum magnam unde dolores eaque modi, assumenda temporibus enim?</p>
+  </div>
+  <div class="comment"><!-- Adjacent sibling selector -->
+    <p>This selector selects each p element that immediately follows an h1 element.</p>
+  </div>
+  <h1>Another Heading 1</h1>
+  <p>Paragraph after the first heading</p>
+  <div class="comment"><!-- General sibling selector -->
+    <p>This selector selects each p element that follows an h2 element, whether immediately after or not.</p>
+  </div>
+  <h2>Another Heading 2</h2>
+  <p>Paragraph after the second heading</p>
+</body>
+</html>
